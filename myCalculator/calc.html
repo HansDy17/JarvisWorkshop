@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Calculator</title>
+    <link rel="stylesheet" href="/myCalculator/css/calc.css">
+</head>
+<body>
+    <div class="container">
+        <p>CASIO 101</p>
+        <div class="calc-body">
+            <div class="row-1 box">
+                <input type="text" class="display" id="display" value="0" disabled>
+            </div>
+            <div class="row-2">
+                <button class="btn box r2-1" id="" onclick="clearDisplay()">C</button>
+                <button class="btn box r2-2" id="" onclick="insertVal('-')">-/+</button>
+                <button class="btn box r2-3" id="" onclick="insertVal('%')">%</button>
+                <button class="btn color-2 box r2-4" id="" onclick="insertVal('/')">/</button>
+            </div>
+            <div class="row-3">
+                <button class="btn color-1 box r2-1" id="" onclick="insertVal(7)">7</button>
+                <button class="btn color-1 box r2-2" id="" onclick="insertVal(8)">8</button>
+                <button class="btn color-1 box r2-3" id="" onclick="insertVal(9)">9</button>
+                <button class="btn color-2 box r2-4" id="" onclick="insertVal('+')">x</button>
+            </div>
+            
+            <div class="row-4">
+                <button class="btn color-1 box r2-1" id="" onclick="insertVal(4)">4</button>
+                <button class="btn color-1 box r2-2" id="" onclick="insertVal(5)">5</button>
+                <button class="btn color-1 box r2-3" id="" onclick="insertVal(6)">6</button>
+                <button class="btn color-2 box r2-4" id="" onclick="insertVal('-')">-</button>
+            </div>
+            <div class="row-5">
+                <button class="btn color-1 box r2-1" id="" onclick="insertVal(1)">1</button>
+                <button class="btn color-1 box r2-2" id="" onclick="insertVal(2)">2</button>
+                <button class="btn color-1 box r2-3" id="" onclick="insertVal(3)">3</button>
+                <button class="btn color-2 box r2-4" id="" onclick="insertVal('+')">+</button>
+            </div>
+            <div class="row-6">
+                <button class="btn color-1 rectangle r2-1" id="" onclick="insertVal(0)">0</button>
+                <button class="btn color-1 box r2-2" onclick="insertVal('.')">.</button>
+                <button class="btn color-2 box r2-3" onclick="calculate()">=</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="/myCalculator/js/calc.js"></script>
+</html>
